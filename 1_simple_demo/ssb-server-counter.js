@@ -2,7 +2,7 @@ const flumeView = require('flumeview-reduce')
 const pull = require('pull-stream')
 
 module.exports = {
-  name: 'actualFriends',
+  name: 'counter',
   version: '1.0.0',
   manifest: {
     get: 'async',
@@ -11,28 +11,23 @@ module.exports = {
   init: function (ssbServer, config) {
     console.log('*** loading actual-friends ***')
 
-    // return {
-    //   get: (cb) => cb('dogs!'),
-    //   stream: pull.values([1,2,3,4,5])
-    // }
-
-    const view = ssbServer._flumeUse('actualFriends', flumeView(
+    const view = ssbServer._flumeUse('counter', flumeView(
       1.0, // version
       (acc, msg) => { //reduce
-        console.log('/')
         return {
           total: acc.total + 1
         }
       },
-      (msg) => { //map
-        return msg
-      },
+      (msg) => msg,  //map
       null, //codec
       initialState()
     ))
     console.log('init FlumeView', view)
 
-    return view
+    return {
+      get: view.get,
+      stream: view.stream
+    }
   }
 }
 
