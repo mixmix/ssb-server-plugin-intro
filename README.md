@@ -1,6 +1,6 @@
 # Scuttlebot plugins intro
 
-repo ([ssb](%f2PZYbacgJpNq4buNCVsjG6j55K8olw80QxPjF2Teqs=.sha256) | [github](https://www.github.com:mixmix/ssb-server-plugin-intro))
+repo ([ssb](%f2PZYbacgJpNq4buNCVsjG6j55K8olw80QxPjF2Teqs=.sha256) | [github](https://www.github.com/:mixmix/ssb-server-plugin-intro))
 
 Check out a wide range of scuttlebutt learning resources here : **scuttlebutt-guide** ([ssb](%rRmgg8grYJ/upfXKxFNG62Y49CmkEShk70HoFLIEyDY=.sha256) | [github](https://github.com/ssbc/scuttlebutt-guide))
 
