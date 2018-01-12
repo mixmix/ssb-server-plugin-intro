@@ -3,7 +3,7 @@ const Config = require('ssb-config/inject')
 const ssbKeys = require('ssb-keys')
 const Path = require('path')
 
-const appName = "ssb" // <<< NOTE THIS IS YOUR DEFAULT IDENTITY
+const appName = "ssb"
 const opts = null // can set things in here
 
 const config = Config(appName, opts)

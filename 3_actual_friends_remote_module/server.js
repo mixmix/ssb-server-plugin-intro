@@ -3,12 +3,12 @@ const fs = require('fs')
 const Path = require('path')
 
 const config = require('./config')
-console.log('loading config:', config)
+console.log('config:', config)
 
 console.log('*** installing ssb-server plugins ***')
 Server
   .use(require('scuttlebot/plugins/master'))
-  .use(require('./ssb-server-counter'))
+  .use(require('ssb-server-actual-friends'))
 
 console.log('*** starting ssb-server ***')
 const server = Server(config)
