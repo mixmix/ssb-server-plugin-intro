@@ -4,11 +4,11 @@ repo ([ssb](%f2PZYbacgJpNq4buNCVsjG6j55K8olw80QxPjF2Teqs=.sha256) | [github](htt
 
 Check out a wide range of scuttlebutt learning resources here : **scuttlebutt-guide** ([ssb](%rRmgg8grYJ/upfXKxFNG62Y49CmkEShk70HoFLIEyDY=.sha256) | [github](https://github.com/ssbc/scuttlebutt-guide))
 
-In these 3 folders, I walk through a progression of making a simple plguin, through to making a plugins which creates and accesses `flumeview`
+In these 3 folders, I walk through a progression of making a simple plugin, through to making a plugins which creates and accesses `flumeview`
 
 ## Project 1 : Simple Demo
 
-I've put the code into folders because in this project, you need to run a couple of different file seperately
+I've put the code into folders because in this project, you need to run a couple of different files seperately
 
 e.g.
 ```
@@ -56,7 +56,7 @@ Then save that manifest in the place `ssb-client` will go looking for it.
 
 ### `config.js`
 
-This project sets the your identity (in `config.js`) to `ssb`. This is the default identity, so if you'vebeen running Patchwork/ Patchbay etc, this is connecting to your **real identity**.
+This project sets the your identity (in `config.js`) to `ssb`. This is the default identity, so if you've been running Patchwork/ Patchbay etc, this is connecting to your **real identity**.
 Appending messages will publish them to your friends!
 Views are not published so messing around with those is chill.
 
